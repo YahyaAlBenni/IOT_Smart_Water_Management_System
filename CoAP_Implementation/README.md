@@ -44,10 +44,10 @@ Run the controller: python controller.py
 4. Implement the user:
 The user retrieves sensor data from the CoAP server every 5 seconds. It filters out the notification field and displays sensor values. If notifications exist, they are displayed as alerts.
 
-Run the client: python user.py
+Run the user: python user.py
 
 5. Results and Observations:
-The system successfully transmits sensor data from the controller to the server and retrieves it using the client.
+The system successfully transmits sensor data from the controller to the server and retrieves it using the mobile app.
 Notifications are generated correctly based on:
 - High main tank levels.
 - Low house tank levels.

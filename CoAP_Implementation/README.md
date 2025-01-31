@@ -2,11 +2,11 @@
 
 ## Overview
 
-This project implements a CoAP-based communication system to monitor water tank levels and turbidity using Python and the `aiocoap` library. The system consists of:
+This project implements a CoAP-based communication system to monitor water tank levels, turbidity and pump control using Python and the `aiocoap` library. The system consists of:
 
 - A **controller** that sends sensor data (main tank level, house tank level, and turbidity) to the CoAP server.
-- A **server** that stores the latest sensor values and provides them upon request.
-- A **client** that retrieves and displays sensor data while providing notifications based on predefined conditions.
+- A **server** that stores the latest sensor values and provides them upon request, processes the data, and notifies the user in case of critical conditions.
+- A **user** that retrieves and displays sensor data while providing notifications based on predefined conditions.
 
 ## Implementation Steps
 
@@ -41,10 +41,10 @@ It sends data to the CoAP server every 5 seconds.
 
 Run the controller: python controller.py
 
-4. Implement the Client:
-The client retrieves sensor data from the CoAP server every 5 seconds. It filters out the notification field and displays sensor values. If notifications exist, they are displayed as alerts.
+4. Implement the user:
+The user retrieves sensor data from the CoAP server every 5 seconds. It filters out the notification field and displays sensor values. If notifications exist, they are displayed as alerts.
 
-Run the client: python client.py
+Run the client: python user.py
 
 5. Results and Observations:
 The system successfully transmits sensor data from the controller to the server and retrieves it using the client.

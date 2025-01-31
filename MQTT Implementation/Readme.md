@@ -48,7 +48,7 @@ The user can request the latest sensor values by publishing to user/request.
 Run the user device:
 python user_mobile.py
 
-Results and Observations
+Results and Observations:
 The system successfully transmits sensor data from the controller to the server.
 The server processes notifications correctly based on:
 High main tank levels (≥99%)
@@ -57,7 +57,7 @@ High turbidity (>50 NTU)
 Real-time updates work efficiently with an update cycle of ~5 seconds.
 MQTT ensures stable communication, but message sizes are slightly larger compared to CoAP due to the publish-subscribe model.
 
-Conclusion
+Conclusion:
 MQTT is ideal for continuous monitoring and instant notifications.
 Higher CPU & latency than CoAP, but provides reliable real-time updates.
 Efficient water management system using IoT and MQTT! 🚀

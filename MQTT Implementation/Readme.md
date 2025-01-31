@@ -62,4 +62,3 @@ MQTT ensures stable communication, but message sizes are slightly larger compare
 Conclusion:
 - MQTT is ideal for continuous monitoring and instant notifications.
 - Higher CPU & latency than CoAP, but provides reliable real-time updates.
-- Efficient water management system using IoT and MQTT! 🚀

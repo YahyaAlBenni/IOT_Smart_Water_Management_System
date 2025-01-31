@@ -35,6 +35,7 @@ The controller simulates sensor readings by generating random values for:
 - Main tank level (0-100%).
 - House tank level (0-100%).
 - Turbidity (0-100 NTU).
+
 It publishes this data to the MQTT broker every 5 seconds.
 
 Run the controller:

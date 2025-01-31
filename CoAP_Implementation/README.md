@@ -16,23 +16,21 @@ Ensure you have Python installed along with the required `aiocoap` package:
 
 
 pip install aiocoap
-2. Implement the CoAP Server
+2. Implement the CoAP Server:
 The server stores sensor data and updates notifications based on predefined thresholds. The server exposes four CoAP resources:
 
-/main_tank_level: Updates main tank water level.
-/house_tank_level: Updates house tank water level.
-/turbidity: Updates turbidity value.
-/sensor_data: Retrieves the latest sensor readings and notification status.
+- /main_tank_level: Updates main tank water level.
+- /house_tank_level: Updates house tank water level.
+- /turbidity: Updates turbidity value.
+- /sensor_data: Retrieves the latest sensor readings and notification status.
+
+
 The notification system sets flags if:
+- The main tank is nearly full (>=99%) or the house tank is low (<25%).
+- The turbidity exceeds 50 NTU.
 
-The main tank is nearly full (>=99%) or the house tank is low (<25%).
-The turbidity exceeds 50 NTU.
-Run the server:
+Run the server: python server.py
 
-bash
-Copy
-Edit
-python server.py
 3. Implement the Controller
 The controller simulates sensor readings by generating random values for:
 

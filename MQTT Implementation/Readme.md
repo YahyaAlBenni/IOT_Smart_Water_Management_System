@@ -12,7 +12,7 @@ This project implements an **MQTT-based communication system** to monitor **main
 
 ## Implementation Steps
 
-1️⃣ Install Dependencies
+1️⃣ Install Dependencies:
 
 Ensure you have Python installed along with the required `paho-mqtt` package:
 pip install paho-mqtt

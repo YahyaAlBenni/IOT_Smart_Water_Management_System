@@ -11,13 +11,9 @@ The **IoT Water Tank Management System** is designed to optimize water extractio
 
 ### Key Features:
 - **Predictive Maintenance**: Sensors monitor pump health (temperature, vibration, pressure) to prevent failures.
+- **Control**: Stop the pump when the main tank is full or when there is a risk of failure due to very high temperature and pressure.
 - **Principal Tank Monitoring**: Water level sensors track availability and prevent overflows.
 - **Household Monitoring**: Individual tanks are equipped with level, pH, turbidity, and flow sensors to ensure safe usage.
 - **Mobile App**: Provides real-time updates on water levels, consumption, and quality, sending alerts for anomalies.
-
-### System Communication:
-- **Zigbee**: Used for local sensor communication due to its low power consumption and long range.
-- **Wi-Fi**: Connects the system to the cloud for real-time monitoring.
-- **Physical Cables**: Used for pump sensors due to significant depth and signal interference.
 
 This project aims to improve water resource management using IoT technology, ensuring sustainability and efficiency in residential water distribution systems.

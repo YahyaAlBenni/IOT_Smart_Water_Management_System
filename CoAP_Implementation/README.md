@@ -1,4 +1,4 @@
-# CoAP-Based Water Tank Monitoring System
+# CoAP-Based Smart Water Management System
 
 ## Overview
 

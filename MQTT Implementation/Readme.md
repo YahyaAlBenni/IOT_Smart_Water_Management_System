@@ -23,9 +23,9 @@ It sends notifications based on predefined thresholds.
 It publishes pump control commands when necessary.
 
 Notification System Triggers:
-Main tank is nearly full (≥99%) → Pump is stopped.
-House tank is low (<25%) → User is notified to reduce water usage.
-Turbidity exceeds 50 NTU → User is alerted about water quality.
+Main tank is nearly full (≥99%) → Pump is stopped.\n
+House tank is low (<25%) → User is notified to reduce water usage.\n
+Turbidity exceeds 50 NTU → User is alerted about water quality.\n
 
 Run the MQTT server:
 python server.py

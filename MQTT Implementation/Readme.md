@@ -22,16 +22,7 @@ The server subscribes to sensor topics and processes data.
 It sends notifications based on predefined thresholds.
 It publishes pump control commands when necessary.
 
-MQTT Topics :
-water_level/main_tank:	 Updates main tank water level
-water_level/house_tank:	Updates house tank water level
-water_quality/turbidity:	Updates turbidity value
-pump/control:	Controls the pump (start/stop)
-user/request:	Handles user requests for sensor data
-user/response:	Responds with the latest sensor readings
-user/notifications:	Sends alerts to the user device
-N
-otification System Triggers:
+Notification System Triggers:
 Main tank is nearly full (≥99%) → Pump is stopped.
 House tank is low (<25%) → User is notified to reduce water usage.
 Turbidity exceeds 50 NTU → User is alerted about water quality.

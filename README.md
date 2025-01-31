@@ -1,5 +1,3 @@
-# IoT Water Tank Management System
-
 ## Smart Water Monitoring and Management System
 
 ### Team Members:
